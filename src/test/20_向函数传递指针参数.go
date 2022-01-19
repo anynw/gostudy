@@ -14,13 +14,13 @@ func main() {
 	 * &a 指向 a 变量的地址
 	 * &b 指向 b 变量的地址
 	 */
-	swap(&a, &b)
+	swap3(&a, &b)
 
 	fmt.Printf("交换后 a 的值 : %d\n", a)
 	fmt.Printf("交换后 b 的值 : %d\n", b)
 }
 
-func swap(x *int, y *int) {
+func swap3(x *int, y *int) {
 	var temp int
 	temp = *x /* 保存 x 地址的值 */
 	*x = *y   /* 将 y 赋值给 x */

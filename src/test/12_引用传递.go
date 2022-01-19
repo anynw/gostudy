@@ -12,13 +12,13 @@ func main() {
 	fmt.Printf("交换前a的值：%d\n", a)
 	fmt.Printf("交换前b的值：%d\n", b)
 
-	swap(&a, &b)
+	swap2(&a, &b)
 
 	fmt.Printf("交换后a的值：%d\n", a)
 	fmt.Printf("交换后b的值：%d\n", b)
 }
 
-func swap(x *int, y *int) {
+func swap2(x *int, y *int) {
 	var temp int
 	temp = *x
 	*x = *y
